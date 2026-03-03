@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About | Timbavati Medical Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body{
+  background:#f5f7fb;
+}
+
+.hero{
+  background:linear-gradient(135deg,#047857,#10b981); /* Green theme */
+}
+
+.section-title{
+  font-size:2.2rem;
+  font-weight:700;
+  color:#047857;
+}
+
+.card{
+  transition:all .4s ease;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Navbar */
+.nav-link {
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #d1fae5;
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<header class="bg-green-800 text-white shadow-lg fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold">Timbavati Medical</a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link font-semibold">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="clients.html" class="nav-link">Clients</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-green-700">
+    <a href="index.html" class="block px-6 py-3 hover:bg-green-600 transition">Home</a>
+    <a href="about.html" class="block px-6 py-3 hover:bg-green-600 transition">About</a>
+    <a href="services.html" class="block px-6 py-3 hover:bg-green-600 transition">Services</a>
+    <a href="clients.html" class="block px-6 py-3 hover:bg-green-600 transition">Clients</a>
+    <a href="gallery.html" class="block px-6 py-3 hover:bg-green-600 transition">Gallery</a>
+    <a href="contact.html" class="block px-6 py-3 hover:bg-green-600 transition">Contact</a>
+  </div>
+</header>
+
+<!-- SPACING FOR FIXED NAVBAR -->
+<div class="h-16"></div>
+
+<!-- HERO -->
+<section class="hero text-white py-28 text-center">
+<div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+<h1 class="text-5xl font-bold mb-6">Timbavati Medical Services</h1>
+<p class="text-xl opacity-90">Occupational Health • Safety • Wellness • Primary Healthcare</p>
+</div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="section-title text-center mb-14" data-aos="fade-up">Company Overview</h2>
+
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div data-aos="fade-right">
+<p class="text-lg mb-6">Timbavati Medical Services (TMS) is a South African-based Occupational Health, Wellness and Occupational Health & Safety company with extensive expertise in Occupational Medicine, Occupational Hygiene, Employee Wellness and Primary Healthcare.</p>
+<p class="mb-6">TMS is a proudly <strong>100% black-owned company</strong> providing comprehensive Occupational Medicine & Health, Occupational Hygiene, Occupational Therapy, Occupational Health & Safety, Wellness and Primary Healthcare services to clients within both the public and commercial sectors.</p>
+<p>Established in <strong>2010</strong>, the organisation was founded with the objective of improving health and safety standards within workplaces across diverse industries.</p>
+</div>
+
+<div data-aos="fade-left">
+<div class="bg-white p-10 rounded-2xl shadow-xl">
+<p class="mb-4">TMS collaborates closely with occupational hygiene specialists, dieticians and occupational therapists to deliver integrated workplace health solutions.</p>
+<p>These partnerships ensure high-quality services delivered in compliance with South African legislation and international best practices in occupational health and safety.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DIRECTOR -->
+<section class="py-20 bg-gray-100">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="section-title text-center mb-16" data-aos="fade-up">Director Profile</h2>
+
+<div class="grid md:grid-cols-3 gap-10 items-start">
+<div data-aos="zoom-in">
+<div class="bg-white rounded-2xl shadow-xl p-8 text-center">
+<div class="w-40 h-40 bg-gray-200 mx-auto rounded-full mb-6"></div>
+<h3 class="text-xl font-bold mb-2">Dr Courage Tiyiselani Mkhawana</h3>
+<p class="text-sm text-gray-600">MBChB • Occupational Medicine Practitioner</p>
+</div>
+</div>
+
+<div class="md:col-span-2" data-aos="fade-left">
+<p class="mb-5">Dr Mkhawana is a registered Independent Medical Practitioner with the Health Professions Council of South Africa (HPCSA) with extensive experience in Emergency Medicine, General Practice, HIV Management, Occupational Medicine and Infectious Disease Management.</p>
+<p class="mb-5">He previously served as a Medical Officer at Dr Yusuf Daddo Hospital in Gauteng where he managed and treated COVID-19 patients during the peak of the pandemic. He also worked as a Resident Medical Officer at Netcare Pinehaven Hospital managing ICU and COVID wards.</p>
+<p class="mb-5">Dr Mkhawana manages and operates three travel clinics in Gauteng and is licensed to administer Yellow Fever vaccinations and other infectious disease certifications.</p>
+<p class="mb-5">He obtained his Bachelor of Medicine and Bachelor of Surgery (MBChB) in 2006 and later completed postgraduate qualifications in Occupational Medicine & Health and Tropical Medicine & Health.</p>
+<p>His interests include preventative medicine, workplace healthcare and construction safety. He also organizes the annual <strong>Soweto Wellness Race</strong> promoting healthy lifestyle awareness.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- VISION MISSION STRATEGY -->
+<section class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="section-title text-center mb-16" data-aos="fade-up">Our Direction</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+<div class="card bg-white p-10 rounded-2xl shadow-lg" data-aos="fade-up">
+<h3 class="text-xl font-bold text-green-800 mb-4">Our Vision</h3>
+<p>To establish ourselves as a global leader in providing quality primary healthcare services, occupational medicine and health services, occupational hygiene, occupational health & safety services and employee wellness programmes through innovation, empowered human resources and strategic partnerships.</p>
+</div>
+
+<div class="card bg-white p-10 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
+<h3 class="text-xl font-bold text-green-800 mb-4">Our Mission</h3>
+<p>To augment, improve and implement comprehensive preventative care, workplace safety programmes and accurate work readiness assessments using specialised multidisciplinary approaches.</p>
+</div>
+
+<div class="card bg-white p-10 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+<h3 class="text-xl font-bold text-green-800 mb-4">Our Strategy</h3>
+<p>Timbavati Medical Services is strategically positioned as a value-creation partner for clients throughout South Africa, delivering uncompromised service through a strong cost-leadership approach.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-green-900 text-white text-center py-8">
+<p>© 2026 Timbavati Medical Services</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration:1200,
+  once:true
+});
+
+// Mobile menu toggle
+const menuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>

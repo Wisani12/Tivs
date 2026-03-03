@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Clients | Timbavati Medical Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body{
+  background:#f4f7fb;
+}
+
+.hero{
+  background:linear-gradient(135deg,#047857,#10b981); /* Green theme */
+}
+
+.client-card{
+  transition:all .4s ease;
+}
+
+.client-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Navbar */
+.nav-link {
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #d1fae5;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<header class="bg-green-800 text-white shadow-lg fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold">Timbavati Medical</a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="clients.html" class="nav-link font-semibold">Clients</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-green-700">
+    <a href="index.html" class="block px-6 py-3 hover:bg-green-600 transition">Home</a>
+    <a href="about.html" class="block px-6 py-3 hover:bg-green-600 transition">About</a>
+    <a href="services.html" class="block px-6 py-3 hover:bg-green-600 transition">Services</a>
+    <a href="clients.html" class="block px-6 py-3 hover:bg-green-600 transition">Clients</a>
+    <a href="gallery.html" class="block px-6 py-3 hover:bg-green-600 transition">Gallery</a>
+    <a href="contact.html" class="block px-6 py-3 hover:bg-green-600 transition">Contact</a>
+  </div>
+</header>
+
+<!-- SPACING FOR FIXED NAVBAR -->
+<div class="h-16"></div>
+
+<!-- HERO -->
+<section class="hero text-white py-28 text-center">
+<div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+<h1 class="text-5xl font-bold mb-6">Our Clients</h1>
+<p class="text-xl opacity-90">Trusted by Leading Organisations Across South Africa</p>
+</div>
+</section>
+
+<!-- CLIENT LIST WITH IMAGES -->
+<section class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-green-800 text-center mb-16" data-aos="fade-up">
+Organisations We Have Served
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up">
+<img src="images/lbc-logo.png" alt="LBC Lenco Construction" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">LBC Lenco Construction Pty Ltd</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up" data-aos-delay="100">
+<img src="images/snd-logo.png" alt="S & ND Engineering" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">S & ND Engineering and Environmental Pty Ltd</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up" data-aos-delay="200">
+<img src="images/solang-logo.png" alt="Solang Batho Plant Hire" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">Solang Batho Plant Hire CC</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up">
+<img src="images/laphinda-logo.png" alt="Laphinda Cleaning and Security Services" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">Laphinda Cleaning and Security Services CC</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up" data-aos-delay="100">
+<img src="images/cdr-logo.png" alt="CDR Sisonke Electrical" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">CDR Sisonke Electrical Pty Ltd</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up" data-aos-delay="200">
+<img src="images/jcwright-logo.png" alt="JC Wright Electrical Contractors" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">JC Wright Electrical Contractors Pty Ltd</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up">
+<img src="images/nthutang-logo.png" alt="Nthutang Developers" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">Nthutang Developers Pty Ltd</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up" data-aos-delay="100">
+<img src="images/rhifosi-logo.png" alt="RHIFOSI GROUP" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">RHIFOSI GROUP</h3>
+</div>
+
+<div class="client-card bg-white p-6 rounded-2xl shadow-lg flex items-center gap-6" data-aos="fade-up" data-aos-delay="200">
+<img src="images/bagorosi-logo.png" alt="Bagorosi Pty Ltd" class="w-20 h-20 object-contain bg-gray-100 p-2 rounded-lg">
+<h3 class="font-semibold text-lg">Bagorosi Pty Ltd</h3>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="bg-green-800 text-white py-20 text-center" data-aos="fade-up">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-3xl font-bold mb-6">Partner With Timbavati Medical Services</h2>
+<p class="mb-8">Delivering trusted Occupational Health, Safety and Wellness solutions across South Africa.</p>
+<a href="contact.html" class="bg-white text-green-800 px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition">Become a Client</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-green-900 text-white text-center py-8">
+<p>© 2026 Timbavati Medical Services</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+duration:1200,
+once:true
+});
+
+// Mobile menu toggle
+const menuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+menuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us | Timbavati Medical Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body{
+  background:#f4f7fb;
+}
+
+.hero{
+  background:linear-gradient(135deg,#047857,#10b981);
+}
+
+input, textarea{
+  transition:all 0.3s ease;
+}
+input:focus, textarea:focus{
+  outline:none;
+  box-shadow:0 0 8px rgba(5,150,105,0.5);
+  border-color:#047857;
+}
+
+/* Navbar */
+.nav-link {
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #d1fae5;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<header class="bg-green-800 text-white shadow-lg fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold">Timbavati Medical</a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="clients.html" class="nav-link">Clients</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link font-semibold">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-green-700">
+    <a href="index.html" class="block px-6 py-3 hover:bg-green-600 transition">Home</a>
+    <a href="about.html" class="block px-6 py-3 hover:bg-green-600 transition">About</a>
+    <a href="services.html" class="block px-6 py-3 hover:bg-green-600 transition">Services</a>
+    <a href="clients.html" class="block px-6 py-3 hover:bg-green-600 transition">Clients</a>
+    <a href="gallery.html" class="block px-6 py-3 hover:bg-green-600 transition">Gallery</a>
+    <a href="contact.html" class="block px-6 py-3 hover:bg-green-600 transition">Contact</a>
+  </div>
+</header>
+
+<!-- SPACING FOR FIXED NAVBAR -->
+<div class="h-16"></div>
+
+<!-- HERO -->
+<section class="hero text-white py-28 text-center">
+<div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+<h1 class="text-5xl font-bold mb-6">Contact Us</h1>
+<p class="text-xl opacity-90">We’re here to answer your questions and provide support</p>
+</div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-green-800 text-center mb-16" data-aos="fade-up">
+Get in Touch
+</h2>
+
+<div class="grid md:grid-cols-2 gap-12">
+
+<!-- Form -->
+<div data-aos="fade-right">
+<form action="mailto:info@tmedicals.co.za" method="POST" class="bg-white p-10 rounded-2xl shadow-lg">
+<div class="mb-6">
+<label class="block mb-2 font-semibold">Full Name</label>
+<input type="text" name="name" required class="w-full border border-gray-300 rounded-lg p-3">
+</div>
+
+<div class="mb-6">
+<label class="block mb-2 font-semibold">Email Address</label>
+<input type="email" name="email" required class="w-full border border-gray-300 rounded-lg p-3">
+</div>
+
+<div class="mb-6">
+<label class="block mb-2 font-semibold">Phone Number</label>
+<input type="tel" name="phone" required class="w-full border border-gray-300 rounded-lg p-3">
+</div>
+
+<div class="mb-6">
+<label class="block mb-2 font-semibold">Message</label>
+<textarea name="message" rows="5" required class="w-full border border-gray-300 rounded-lg p-3"></textarea>
+</div>
+
+<button type="submit" class="bg-green-700 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-600 transition">
+Send Message
+</button>
+
+<p class="mt-4 text-sm text-gray-500">
+This is a no-reply message. We will get back to you as soon as possible.
+</p>
+</form>
+</div>
+
+<!-- Contact Info & Map -->
+<div data-aos="fade-left" class="space-y-6">
+
+<div class="bg-white p-10 rounded-2xl shadow-lg">
+<h3 class="text-xl font-bold text-green-800 mb-4">Contact Information</h3>
+<p class="mb-2"><strong>Johannesburg Branch (Head Office):</strong> 17662/1, Ext 8, Protea Glen, 1818</p>
+<p class="mb-2"><strong>Mafikeng Branch:</strong> 7874, Unit 6, Mmabatho, 2745</p>
+<p class="mb-2"><strong>Polokwane Branch:</strong> 394, Zone 8, Seshego, 0742</p>
+<p class="mb-2"><strong>Postal Address:</strong> P.O. Box 7884, Westgate, 1734</p>
+<p class="mb-2"><strong>Telephone:</strong> 087 150 7893</p>
+<p class="mb-2"><strong>Email:</strong> info@tmedicals.co.za</p>
+</div>
+
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+<iframe class="w-full h-64" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.123456!2d27.0!3d-26.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9564e!2sTimbavati%20Medical%20Services!5e0!3m2!1sen!2sza!4v1610000000000!5m2!1sen!2sza" 
+style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="bg-green-800 text-white py-20 text-center" data-aos="fade-up">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-3xl font-bold mb-6">We’re Here To Support You</h2>
+<p class="mb-8">Whether you have questions or want to book a service, contact Timbavati Medical Services today.</p>
+<a href="mailto:info@tmedicals.co.za" class="bg-white text-green-800 px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition">Email Us</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-green-900 text-white text-center py-8">
+<p>© 2026 Timbavati Medical Services</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+duration:1200,
+once:true
+});
+
+// Mobile menu toggle
+const menuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+menuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>

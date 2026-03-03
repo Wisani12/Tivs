@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Services | Timbavati Medical Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+
+body{
+  background:#f4f7fb;
+}
+
+.hero{
+  background:linear-gradient(135deg,#047857,#10b981); /* Green theme */
+}
+
+.section-title{
+  font-size:2.2rem;
+  font-weight:700;
+  color:#047857;
+}
+
+.service-card{
+  transition:all .4s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.division-box{
+  background:linear-gradient(135deg,#047857,#10b981); /* Green gradient */
+}
+
+/* Navbar */
+.nav-link {
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #d1fae5;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<header class="bg-green-800 text-white shadow-lg fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-16">
+      <a href="index.html" class="text-2xl font-bold">Timbavati Medical</a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link font-semibold">Services</a>
+        <a href="clients.html" class="nav-link">Clients</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-green-700">
+    <a href="index.html" class="block px-6 py-3 hover:bg-green-600 transition">Home</a>
+    <a href="about.html" class="block px-6 py-3 hover:bg-green-600 transition">About</a>
+    <a href="services.html" class="block px-6 py-3 hover:bg-green-600 transition">Services</a>
+    <a href="clients.html" class="block px-6 py-3 hover:bg-green-600 transition">Clients</a>
+    <a href="gallery.html" class="block px-6 py-3 hover:bg-green-600 transition">Gallery</a>
+    <a href="contact.html" class="block px-6 py-3 hover:bg-green-600 transition">Contact</a>
+  </div>
+</header>
+
+<!-- SPACING FOR FIXED NAVBAR -->
+<div class="h-16"></div>
+
+<!-- HERO -->
+<section class="hero text-white py-28 text-center">
+<div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+<h1 class="text-5xl font-bold mb-6">Our Services</h1>
+<p class="text-xl opacity-90">Comprehensive Occupational Health, Safety & Wellness Solutions</p>
+</div>
+</section>
+
+<!-- OCCUPATIONAL MEDICINE DIVISION -->
+<section class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+
+<div class="division-box text-white p-8 rounded-2xl shadow-xl mb-14" data-aos="fade-right">
+<h2 class="text-2xl font-bold">Occupational Medicine & Health Division</h2>
+<p class="opacity-90 mt-2">The following service offerings are rendered by the Occupational Medicine & Health Division.</p>
+</div>
+
+<div class="grid md:grid-cols-3 gap-10">
+<div class="service-card bg-white p-8 rounded-2xl shadow-lg" data-aos="zoom-in">
+<h3 class="text-xl font-bold text-green-800 mb-4">Medical Surveillance Programmes</h3>
+<p>Comprehensive monitoring programmes designed to detect early signs of occupational-related illnesses.</p>
+</div>
+
+<div class="service-card bg-white p-8 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="150">
+<h3 class="text-xl font-bold text-green-800 mb-4">Medical Examinations</h3>
+<p>Pre-employment, periodic, exit and fitness-for-duty medical assessments.</p>
+</div>
+
+<div class="service-card bg-white p-8 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+<h3 class="text-xl font-bold text-green-800 mb-4">Hazard Identification & Risk Assessment</h3>
+<p>Systematic workplace hazard identification and implementation of effective control measures.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- OCCUPATIONAL HEALTH & SAFETY DIVISION -->
+<section class="py-20 bg-gray-100">
+<div class="max-w-6xl mx-auto px-6">
+<div class="division-box text-white p-8 rounded-2xl shadow-xl mb-14" data-aos="fade-left">
+<h2 class="text-2xl font-bold">Occupational Health & Safety Division</h2>
+<p class="opacity-90 mt-2">Professional workplace safety compliance and risk management solutions.</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-10">
+<div class="service-card bg-white p-10 rounded-2xl shadow-lg" data-aos="fade-up">
+<h3 class="text-xl font-bold text-green-800 mb-4">Purpose of Risk Assessment</h3>
+<p>Risk assessments are conducted to identify potential hazards, evaluate associated risks, and implement preventative measures to ensure a safe working environment.</p>
+</div>
+
+<div class="service-card bg-white p-10 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+<h3 class="text-xl font-bold text-green-800 mb-4">Developing Safety Plans</h3>
+<p>Development of structured safety plans tailored to organisational needs, ensuring compliance with South African occupational health and safety regulations.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRIMARY HEALTHCARE & WELLNESS -->
+<section class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<div class="division-box text-white p-8 rounded-2xl shadow-xl mb-14" data-aos="fade-right">
+<h2 class="text-2xl font-bold">Primary Healthcare & Wellness Division</h2>
+<p class="opacity-90 mt-2">Integrated wellness and preventative healthcare solutions for organisations.</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-10">
+<div class="service-card bg-white p-10 rounded-2xl shadow-lg" data-aos="zoom-in">
+<h3 class="text-xl font-bold text-green-800 mb-4">Health Promotion Workshops</h3>
+<p>Interactive educational workshops promoting preventative healthcare, lifestyle improvement, and workplace wellbeing.</p>
+</div>
+
+<div class="service-card bg-white p-10 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+<h3 class="text-xl font-bold text-green-800 mb-4">HIV Wellness Programmes</h3>
+<p>Comprehensive HIV management and awareness programmes designed to support employees and reduce workplace health risks.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="bg-green-800 text-white py-20 text-center" data-aos="fade-up">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-3xl font-bold mb-6">Partner With Timbavati Medical Services</h2>
+<p class="mb-8">Delivering trusted Occupational Health, Safety and Wellness solutions across South Africa.</p>
+<a href="contact.html" class="bg-white text-green-800 px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition">Request Consultation</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-green-900 text-white text-center py-8">
+<p>© 2026 Timbavati Medical Services</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration:1200,
+  once:true
+});
+
+// Mobile menu toggle
+const menuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>
